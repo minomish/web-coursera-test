@@ -1,0 +1,65 @@
+
+
+body{
+	background-color: #FFF5F0;
+	margin: 0 32px;
+}
+
+h1{
+	text-align: center;
+}
+
+.box {
+	display: flex;
+	gap: 16px;
+}
+
+.menu-box{
+	position: relative;
+	background-color: #FFDAD0;
+	border: 1px solid #FFB6A9;
+	box-sizing: border-box;
+}
+
+.name{
+	position: absolute;
+	right: 0;
+	width: 150px;
+	padding: 4px;
+	margin: 0;
+	background-color: salmon;
+	border: 3px solid #CD5C5C;
+	text-align: center;
+	color: white;
+
+}
+
+.describe{
+	margin: 8px;
+	padding-top: 32px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px){
+	.box {
+		flex-wrap: wrap;
+		gap: 11px;
+		justify-content: space-between;
+	}
+	.menu-box{
+		width: 48%;
+	}
+	.box .menu-box:nth-child(3){
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px){
+	body{
+		margin: 0 32px;
+	}
+	.box{
+		flex-direction: column;
+	}
+}
